@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['gpio_20_5c_3cport_5c_3e_20_5c_3cpins_5c_3e_20_5c_3cmask_5c_3e_0',['GPIO \&lt;port\&gt; \&lt;pins\&gt; \&lt;mask\&gt;',['../gpio_ppm.html',1,'']]],
+  ['gpio_20refresh_1',['GPIO REFRESH',['../gpio_refresh.html',1,'']]],
+  ['gpio_20reset_2',['GPIO RESET',['../gpio_reset.html',1,'']]],
+  ['gps_20altitude_20_5bon_2f_28off_29_5d_3',['GPS ALTITUDE [ON/(OFF)]',['../gps_alt.html',1,'']]],
+  ['gps_20cogsog_20_5bon_2foff_5d_5brmc_2fvtg_5d_20_5brmc_2fvtg_5d_4',['GPS COGSOG [ON/OFF][RMC/VTG] [RMC/VTG]',['../gps_cogsog_src.html',1,'']]],
+  ['gps_20delay_20_5c_3cn_5c_3eh_5',['GPS DELAY \&lt;n\&gt;h',['../gps_delayh.html',1,'']]],
+  ['gps_20gsa_20_5bon_2f_28off_29_5d_6',['GPS GSA [ON/(OFF)]',['../gps_gsa.html',1,'']]],
+  ['gps_20gsv_20_5bon_2f_28off_29_5d_7',['GPS GSV [ON/(OFF)]',['../gps_gsv.html',1,'']]],
+  ['gps_20latlon_20_5bon_2foff_5d_20_5bgga_2frmc_5d_20_5bgga_2frmc_5d_8',['GPS LATLON [ON/OFF] [GGA/RMC] [GGA/RMC]',['../gps_latlon_src.html',1,'']]],
+  ['gps_20model_9',['GPS MODEL',['../gps_model.html',1,'']]],
+  ['gps_20off_10',['GPS OFF',['../gps_off.html',1,'']]],
+  ['gps_20on_11',['GPS ON',['../gps_on.html',1,'']]],
+  ['gps_20playback_20_5c_3cstop_2ffilename_5c_3e_12',['GPS PLAYBACK \&lt;STOP/filename\&gt;',['../gps_playback.html',1,'']]],
+  ['gps_20position_20survery_20fast_2faccurate_2foff_13',['GPS POSITION SURVERY FAST/ACCURATE/OFF',['../gps_position_survey.html',1,'']]],
+  ['gps_20rate_20_5bn_5d_14',['GPS RATE [n]',['../gps_rate.html',1,'']]],
+  ['gps_20role_20_28auto_29_2fautonomous_2fbase_2frover_15',['GPS ROLE (AUTO)/AUTONOMOUS/BASE/ROVER',['../gps_role_base.html',1,'']]],
+  ['gps_20sbas_20_5b_28none_29_2fauto_2fegnos_2fwaas_2f_5bn_5d_5d_16',['GPS SBAS [(NONE)/AUTO/EGNOS/WAAS/[n]]',['../gps_sbas.html',1,'']]],
+  ['gps_20settle_5ftime_20_5bdelay_5d_17',['GPS SETTLE_TIME [delay]',['../gps_settle_time.html',1,'']]],
+  ['gps_20startup_20_28auto_29_2fmanual_18',['GPS STARTUP (AUTO)/MANUAL',['../gps_startup_auto.html',1,'']]],
+  ['gps_20startup_20baud_20_5brate_5d_19',['GPS STARTUP BAUD [rate]',['../gps_startup_baud.html',1,'']]],
+  ['gps_20startup_20clear_20',['GPS STARTUP CLEAR',['../gps_startup_clear.html',1,'']]],
+  ['gps_20status_21',['GPS STATUS',['../gps_status.html',1,'']]],
+  ['gps_20timebump_20_5bn_5d_22',['GPS TIMEBUMP [n]',['../gps_timebump.html',1,'']]],
+  ['gps_20timesource_20_5bset_5d_23',['GPS TIMESOURCE [SET]',['../gps_timesource.html',1,'']]]
+];
