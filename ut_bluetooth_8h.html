@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>uTrack: uTrack/utBluetooth.h File Reference</title>
+<title>Igtimi Yachtbot Firmware: uTrack/utBluetooth.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uTrack
+   <div id="projectname">Igtimi Yachtbot Firmware
    </div>
   </td>
  </tr>
@@ -82,51 +82,37 @@ $(function() {
   <div class="headertitle"><div class="title">utBluetooth.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>The software module for handling the Bluetooth hardware module (WT32).  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &quot;uTrack.h&quot;</code><br />
 <code>#include &quot;utHAL.h&quot;</code><br />
 <code>#include &quot;utBluetoothAudio.h&quot;</code><br />
 <code>#include &quot;utBluetoothRFCOMM.h&quot;</code><br />
-</div>
-<p><a href="ut_bluetooth_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_t___profile.html">BT_Profile</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the information that is requited when creating a new profile/mode.  <a href="struct_b_t___profile.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_t___device.html">BT_Device</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device that is created when a Bluetooth device is connected to.  <a href="struct_b_t___device.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_t_command.html">BTCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the information about a command to send to the Bluetooth module.  <a href="struct_b_t_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a2058cbaff2c69f75d9d1ed5e50a9d7b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_8h.html#a2058cbaff2c69f75d9d1ed5e50a9d7b4">BLUETOOTH_RX_BUFFER_SIZE</a>&#160;&#160;&#160;256</td></tr>
-<tr class="memdesc:a2058cbaff2c69f75d9d1ed5e50a9d7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer for receiving data.  <br /></td></tr>
 <tr class="separator:a2058cbaff2c69f75d9d1ed5e50a9d7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bbce9d20e4927b1840b70a984a9c47b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_8h.html#a9bbce9d20e4927b1840b70a984a9c47b">BT_RESPONSE_BUFFER_LENGTH</a>&#160;&#160;&#160;256</td></tr>
-<tr class="memdesc:a9bbce9d20e4927b1840b70a984a9c47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer for the response.  <br /></td></tr>
 <tr class="separator:a9bbce9d20e4927b1840b70a984a9c47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82535613865174554b2a5617f2f0b04b"><td class="memItemLeft" align="right" valign="top"><a id="a82535613865174554b2a5617f2f0b04b" name="a82535613865174554b2a5617f2f0b04b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BT_RESPONSE_DATA_BUFFER_LENGTH</b>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a82535613865174554b2a5617f2f0b04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ba51339c807d9e436b0ed0ffc9b69fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_8h.html#a7ba51339c807d9e436b0ed0ffc9b69fb">BLUETOOTH_TX_BUFFER_SIZE</a>&#160;&#160;&#160;1024</td></tr>
-<tr class="memdesc:a7ba51339c807d9e436b0ed0ffc9b69fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transmitting buffer.  <br /></td></tr>
 <tr class="separator:a7ba51339c807d9e436b0ed0ffc9b69fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60466b08e013b4d32c8b64a4bbc780f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_8h.html#a60466b08e013b4d32c8b64a4bbc780f2">BT_MAX_NUM_MODES</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:a60466b08e013b4d32c8b64a4bbc780f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of allowable profile (e.g Audio, RFCOMM)  <br /></td></tr>
 <tr class="separator:a60466b08e013b4d32c8b64a4bbc780f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f039123b908f5f98a82fa823e77f78c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_8h.html#a3f039123b908f5f98a82fa823e77f78c">BT_MAX_NUM_SETUP_COMMANDS</a>&#160;&#160;&#160;32</td></tr>
-<tr class="memdesc:a3f039123b908f5f98a82fa823e77f78c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of allowable setup commands for the BT module.  <br /></td></tr>
 <tr class="separator:a3f039123b908f5f98a82fa823e77f78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace79b57188adf51b0ba19d4d70d1b9fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_8h.html#ace79b57188adf51b0ba19d4d70d1b9fb">BT_MAX_COMMAND_LENGTH</a>&#160;&#160;&#160;64</td></tr>
-<tr class="memdesc:ace79b57188adf51b0ba19d4d70d1b9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max command length for the BT module.  <br /></td></tr>
 <tr class="separator:ace79b57188adf51b0ba19d4d70d1b9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -136,7 +122,6 @@ Enumerations</h2></td></tr>
 , <b>BT_MODULE_RFCOMM</b> = 0x02
 , <b>BT_MODULE_ANY</b> = 0x03
  }</td></tr>
-<tr class="memdesc:a224128d35337e2b42cebf846d4d0c6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fixed mode the BT module can connect to. <br /></td></tr>
 <tr class="separator:a224128d35337e2b42cebf846d4d0c6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed9d18a759ee3edf0039d405bf017639"><td class="memItemLeft" align="right" valign="top"><a id="aed9d18a759ee3edf0039d405bf017639" name="aed9d18a759ee3edf0039d405bf017639"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_8h.html#aed9d18a759ee3edf0039d405bf017639">BT_StateType</a> { <br />
 &#160;&#160;<b>STATE_OFF</b>
@@ -147,19 +132,16 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>STATE_RUNNING</b>
 <br />
  }</td></tr>
-<tr class="memdesc:aed9d18a759ee3edf0039d405bf017639"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode this module is running in. <br /></td></tr>
 <tr class="separator:aed9d18a759ee3edf0039d405bf017639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fe2692df2fe305bfa77cd39bbe8c89f"><td class="memItemLeft" align="right" valign="top"><a id="a2fe2692df2fe305bfa77cd39bbe8c89f" name="a2fe2692df2fe305bfa77cd39bbe8c89f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_8h.html#a2fe2692df2fe305bfa77cd39bbe8c89f">BT_SetupStage</a> { <b>BT_WAIT_BANNER</b>
 , <b>BT_WAIT_COMMANDS</b>
  }</td></tr>
-<tr class="memdesc:a2fe2692df2fe305bfa77cd39bbe8c89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The states used internally when in SetupMode. <br /></td></tr>
 <tr class="separator:a2fe2692df2fe305bfa77cd39bbe8c89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59eff5f8d9074b512a233e8435f62536"><td class="memItemLeft" align="right" valign="top"><a id="a59eff5f8d9074b512a233e8435f62536" name="a59eff5f8d9074b512a233e8435f62536"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_8h.html#a59eff5f8d9074b512a233e8435f62536">BT_Auth_Mode</a> { <b>BT_AUTH_MODE_DISPLAY</b>
 , <b>BT_AUTH_MODE_BUTTON</b>
 , <b>BT_AUTH_MODE_KEYBOARD</b>
 , <b>BT_AUTH_MODE_NONE</b>
  }</td></tr>
-<tr class="memdesc:a59eff5f8d9074b512a233e8435f62536"><td class="mdescLeft">&#160;</td><td class="mdescRight">The states used internally when in SetupMode. <br /></td></tr>
 <tr class="separator:a59eff5f8d9074b512a233e8435f62536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -214,7 +196,6 @@ Oscar Key</dd></dl>
  Last Updated: 20/11/2015 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>2015, Igtimi Ltd., all rights reserved.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>-Requires another module to work. This is the main Bluetooth layer which allows different bluetooth profiles (e.g audio, rfcomm) to work</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>-Multiple RFCOMM Devices using TDMA? </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a2058cbaff2c69f75d9d1ed5e50a9d7b4" name="a2058cbaff2c69f75d9d1ed5e50a9d7b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2058cbaff2c69f75d9d1ed5e50a9d7b4">&#9670;&#160;</a></span>BLUETOOTH_RX_BUFFER_SIZE</h2>
@@ -499,7 +480,7 @@ Oscar Key</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 26 2024 13:41:58 for uTrack by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Tue Jan 14 2025 16:04:28 for Igtimi Yachtbot Firmware by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

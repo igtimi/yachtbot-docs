@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>uTrack: uTrack Documentation</title>
+<title>Igtimi Yachtbot Firmware: Igtimi Yachtbot Firmware</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uTrack
+   <div id="projectname">Igtimi Yachtbot Firmware
    </div>
   </td>
  </tr>
@@ -69,62 +69,25 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">uTrack Documentation </div></div>
+  <div class="headertitle"><div class="title">Igtimi Yachtbot Firmware </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
 Introduction</h1>
-<p>This document 'should' contain all of the uTrack documentation however may be incomplete. <br  />
-<br  />
------------------&mdash;<br  />
-On this page is... <br  />
-1) Defines <br  />
-2) Standard Config Options<br  />
----------------------------&mdash;<br  />
- </p>
-<h2><a class="anchor" id="defcomp"></a>
-1) Defines</h2>
-<h3><a class="anchor" id="defhd_maj"></a>
-HARDWARE_MAJOR=2</h3>
-<p>Sets the Hardware Major Version</p>
-<h3><a class="anchor" id="defhd_min"></a>
-HARDWARE_MINOR=2</h3>
-<p>Sets the Hardware Minor Version</p>
-<h3><a class="anchor" id="defarm"></a>
-ARM7_LPC23xx_KEIL_RVDS</h3>
-<h3><a class="anchor" id="defhashst"></a>
-HUSH_STARTUP</h3>
-<p>Makes the startup quiet (Development Only)</p>
-<h3><a class="anchor" id="defincBT"></a>
-INCLUDE_BT_AUDIO_CODE</h3>
-<p>Compliles the BT_HFP code into the binary</p>
-<h3><a class="anchor" id="defnumaud"></a>
-NUM_AUDIO_BUFFERS=8</h3>
-<p>Sets the number of audio buffers. Should be min of 8 when in used. Must be in muliples of 2.</p>
-<h3><a class="anchor" id="defseriallogon"></a>
-SERIAL_LOGGING_ON</h3>
-<p>Turns on logging out of the serial port. (Development Only)</p>
-<h3><a class="anchor" id="defincluddec"></a>
-INCLUDE_DECLINATION</h3>
-<p>Used in windbot builds</p>
-<h3><a class="anchor" id="definchpsnz"></a>
-INCLUDE_HPSNZ_CODE</h3>
-<p>Used in HPSNZ builds</p>
-<h1><a class="anchor" id="default_config_section"></a>
-2) Standard config options for various modules</h1>
-<h2><a class="anchor" id="windbot"></a>
-WindBot Stuff</h2>
-<p>uart baud 0 4800 <br  />
-monitor on <br  />
-</p>
-<h2><a class="anchor" id="sensor_logging"></a>
-Sensor Logging</h2>
-<p>logfile payloads on <br  />
-logfile nmea off <br  />
-logfile imu off <br  />
-logfile wind off <br  />
-logfile gps off <br  />
-</p>
+<p>This page contains documentation on the commands supported by the Igtimi Yachtbot/Windbot firmware. <br  />
+The commands can be issued as part of the config, or via a server connection. <br  />
+See the 'Topics' Index above for a list of command handlers. <br  />
+ You can find further documentation and links to the latest firmware on the <a href="https://support.yacht-bot.com/">Igtimi Support site</a>.</p>
+<h2><a class="anchor" id="intro_note"></a>
+Note</h2>
+<p>With the shutdown of the Igtimi web platform, the default server connection will no longer work. <br  />
+You can still connect to the devices via Bluetooth, or connect it to a server of your own using the <em>RIOT SERVER_ADDRESS</em> option: <br  />
+This option is only available after updating to Firmware 2.2.540 or greater!<br  />
+</p><div class="fragment"><div class="line">\section default_config_section Standard config options for various modules</div>
+<div class="line"> </div>
+<div class="line">\subsection windbot WindBot Specific</div>
+</div><!-- fragment --><p> uart baud 0 4800 monitor on </p><div class="fragment"><div class="line">\subsection sensor_logging Sensor Logging</div>
+</div><!-- fragment --><p> logfile payloads on logfile nmea off logfile imu off logfile wind off logfile gps off ```</p>
 <h2><a class="anchor" id="system_settings"></a>
 System settings</h2>
 <p>alert volume 0.01 <br  />
@@ -132,10 +95,6 @@ audio volume 1.0 <br  />
 battery shutdown 3.3 <br  />
 file cull 100 <br  />
  </p>
-<h2><a class="anchor" id="cloud_sync"></a>
-Cloud Synchronisation</h2>
-<p>[no default commands here] <br  />
-</p>
 <h2><a class="anchor" id="gps_set"></a>
 GPS</h2>
 <p>gps rate 2 <br  />
@@ -199,7 +158,7 @@ ant on <br  />
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 26 2024 13:41:58 for uTrack by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Tue Jan 14 2025 16:04:28 for Igtimi Yachtbot Firmware by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>uTrack: uTrack/utBluetoothAudio.c File Reference</title>
+<title>Igtimi Yachtbot Firmware: uTrack/utBluetoothAudio.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uTrack
+   <div id="projectname">Igtimi Yachtbot Firmware
    </div>
   </td>
  </tr>
@@ -82,9 +82,6 @@ $(function() {
   <div class="headertitle"><div class="title">utBluetoothAudio.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Is a profile for Audio via bluetooth (HFP-AG).  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;uTrack.h&quot;</code><br />
 <code>#include &quot;utBluetoothAudio.h&quot;</code><br />
 <code>#include &quot;utHAL.h&quot;</code><br />
@@ -93,42 +90,32 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_t___mode_handler.html">BT_ModeHandler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler type for running modes.  <a href="struct_b_t___mode_handler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_t_device_data.html">BTDeviceData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a Bluetooth device.  <a href="struct_b_t_device_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a51080085b25ec029790463e6502777bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_audio_8c.html#a51080085b25ec029790463e6502777bf">BLUETOOTH_AUDIO_RX_BUFFER_SIZE</a>&#160;&#160;&#160;128</td></tr>
-<tr class="memdesc:a51080085b25ec029790463e6502777bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive buffer for the Bluetooth Audio module.  <br /></td></tr>
 <tr class="separator:a51080085b25ec029790463e6502777bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae418247dcaca196cfa54fc77a19d591f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_audio_8c.html#ae418247dcaca196cfa54fc77a19d591f">RESPONSE_BUFFER_LENGTH</a>&#160;&#160;&#160;150</td></tr>
-<tr class="memdesc:ae418247dcaca196cfa54fc77a19d591f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length, in bytes, of the buffer handling command responses from the BT module.  <br /></td></tr>
 <tr class="separator:ae418247dcaca196cfa54fc77a19d591f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68cd4ef7a4e214b1ccfa45f46d251f20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_audio_8c.html#a68cd4ef7a4e214b1ccfa45f46d251f20">ABS_MAX_CHANNELS</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:a68cd4ef7a4e214b1ccfa45f46d251f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of audio channels the current implementation supports.  <br /></td></tr>
 <tr class="separator:a68cd4ef7a4e214b1ccfa45f46d251f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cbe8b477223f8e759923edb3dd2f824"><td class="memItemLeft" align="right" valign="top"><a id="a4cbe8b477223f8e759923edb3dd2f824" name="a4cbe8b477223f8e759923edb3dd2f824"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_WRITE_RETRIES</b>&#160;&#160;&#160;10</td></tr>
-<tr class="memdesc:a4cbe8b477223f8e759923edb3dd2f824"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of times to retry recording to file within the time period specified by <a class="el" href="ut_bluetooth_audio_8c.html#a3a4557a7240d85eb185196c025784b2e">RETRY_RATE_TIMER</a> . <br /></td></tr>
 <tr class="separator:a4cbe8b477223f8e759923edb3dd2f824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a4557a7240d85eb185196c025784b2e"><td class="memItemLeft" align="right" valign="top"><a id="a3a4557a7240d85eb185196c025784b2e" name="a3a4557a7240d85eb185196c025784b2e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>RETRY_RATE_TIMER</b>&#160;&#160;&#160;15.0f * 60.0f</td></tr>
-<tr class="memdesc:a3a4557a7240d85eb185196c025784b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time, in seconds, that the retry rate should be measured over. <br /></td></tr>
 <tr class="separator:a3a4557a7240d85eb185196c025784b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0690b218d206041648e5af19bbc52e6d"><td class="memItemLeft" align="right" valign="top"><a id="a0690b218d206041648e5af19bbc52e6d" name="a0690b218d206041648e5af19bbc52e6d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_DEVICE_LISTING</b>&#160;&#160;&#160;6</td></tr>
-<tr class="memdesc:a0690b218d206041648e5af19bbc52e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of devices to store IDs for when listing stored pairings with the SET command. <br /></td></tr>
 <tr class="separator:a0690b218d206041648e5af19bbc52e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa097501054f15d9a70b666d186ab7ed8"><td class="memItemLeft" align="right" valign="top"><a id="aa097501054f15d9a70b666d186ab7ed8" name="aa097501054f15d9a70b666d186ab7ed8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>INQUIRY_RESULTS_WAIT_MS</b>&#160;&#160;&#160;10000</td></tr>
-<tr class="memdesc:aa097501054f15d9a70b666d186ab7ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time to wait before cancelling an INQUIRY command because it has taken too long. <br /></td></tr>
 <tr class="separator:aa097501054f15d9a70b666d186ab7ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a272ea21fdc6ad76a4201ebf350bf85a5"><td class="memItemLeft" align="right" valign="top"><a id="a272ea21fdc6ad76a4201ebf350bf85a5" name="a272ea21fdc6ad76a4201ebf350bf85a5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_INQUIRY_IDS</b>&#160;&#160;&#160;6</td></tr>
-<tr class="memdesc:a272ea21fdc6ad76a4201ebf350bf85a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of devices to store IDs for when listing visible devices with an INQUIRY command. <br /></td></tr>
 <tr class="separator:a272ea21fdc6ad76a4201ebf350bf85a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -138,7 +125,6 @@ Enumerations</h2></td></tr>
 , <b>MODE_RUNNING</b>
 , <b>MODE_MAX</b>
  }</td></tr>
-<tr class="memdesc:a35196a8934d5f78829fb77fbe2c38768"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode this module is running in. <br /></td></tr>
 <tr class="separator:a35196a8934d5f78829fb77fbe2c38768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf017e7bf4227d76f55cfa28b0406981"><td class="memItemLeft" align="right" valign="top"><a id="abf017e7bf4227d76f55cfa28b0406981" name="abf017e7bf4227d76f55cfa28b0406981"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_audio_8c.html#abf017e7bf4227d76f55cfa28b0406981">BTState</a> { <br />
 &#160;&#160;<b>BT_ON</b>
@@ -154,7 +140,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>BTSTATEMAX</b>
 <br />
  }</td></tr>
-<tr class="memdesc:abf017e7bf4227d76f55cfa28b0406981"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state this module is in, primarily used in Running Mode. BTSTATEMAX is a sentinel value. <br /></td></tr>
 <tr class="separator:abf017e7bf4227d76f55cfa28b0406981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a385391953a0bb7886d16f944b766f2fa"><td class="memItemLeft" align="right" valign="top"><a id="a385391953a0bb7886d16f944b766f2fa" name="a385391953a0bb7886d16f944b766f2fa"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_audio_8c.html#a385391953a0bb7886d16f944b766f2fa">BTConnectionState</a> { <br />
 &#160;&#160;<b>CLOSED</b> = 0
@@ -167,7 +152,6 @@ Enumerations</h2></td></tr>
 , <b>BTCON_MAX</b>
 <br />
  }</td></tr>
-<tr class="memdesc:a385391953a0bb7886d16f944b766f2fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The states a connection between two Bluetooth devices can be in, as handled here. BTCON_MAX is a sentinel value. <br /></td></tr>
 <tr class="separator:a385391953a0bb7886d16f944b766f2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d5dca91a7ea1c3791b525fa1dd319f"><td class="memItemLeft" align="right" valign="top"><a id="ac4d5dca91a7ea1c3791b525fa1dd319f" name="ac4d5dca91a7ea1c3791b525fa1dd319f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_bluetooth_audio_8c.html#ac4d5dca91a7ea1c3791b525fa1dd319f">BTPairState</a> { <br />
 &#160;&#160;<b>NOT_PAIRED</b>
@@ -180,7 +164,6 @@ Enumerations</h2></td></tr>
 , <b>PAIRED</b>
 <br />
  }</td></tr>
-<tr class="memdesc:ac4d5dca91a7ea1c3791b525fa1dd319f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The states used internally when in Pairing Mode. <br /></td></tr>
 <tr class="separator:ac4d5dca91a7ea1c3791b525fa1dd319f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -220,8 +203,6 @@ Stephen Markham</dd></dl>
  Last Updated: 14/12/2015 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>2015, Igtimi Ltd., all rights reserved.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>To use this module INCLUDE_BT_AUDIO_CODE must be defined along with NUM_AUDIO_BUFFERS=X where 8&lt;X&lt;14 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd><br  />
- </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a68cd4ef7a4e214b1ccfa45f46d251f20" name="a68cd4ef7a4e214b1ccfa45f46d251f20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68cd4ef7a4e214b1ccfa45f46d251f20">&#9670;&#160;</a></span>ABS_MAX_CHANNELS</h2>
@@ -445,7 +426,7 @@ Stephen Markham</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 26 2024 13:41:58 for uTrack by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Tue Jan 14 2025 16:04:28 for Igtimi Yachtbot Firmware by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

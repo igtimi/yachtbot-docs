@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>uTrack: uTrack/Hardware/2387/utI2S_2387.c File Reference</title>
+<title>Igtimi Yachtbot Firmware: uTrack/Hardware/2387/utI2S_2387.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">uTrack
+   <div id="projectname">Igtimi Yachtbot Firmware
    </div>
   </td>
  </tr>
@@ -79,9 +79,6 @@ $(function() {
   <div class="headertitle"><div class="title">utI2S_2387.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><a class="el" href="ut_i2_s__2387_8c.html" title="utI2S_2387.c handles reading and writing audio to and from the I2S bus connected to the Bluetooth har...">utI2S_2387.c</a> handles reading and writing audio to and from the I2S bus connected to the Bluetooth hardware module on the LPC2387, as well as writing recorded audio to a file.  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;LPC23xx.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
@@ -104,7 +101,6 @@ Macros</h2></td></tr>
 <tr class="separator:a1049a0169e895645cf0ca72784a1ee13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac374cd2759ffcea631b903bc5156683b"><td class="memItemLeft" align="right" valign="top"><a id="ac374cd2759ffcea631b903bc5156683b" name="ac374cd2759ffcea631b903bc5156683b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>FIFO_RX_LVL</b>&#160;&#160;&#160;4</td></tr>
-<tr class="memdesc:ac374cd2759ffcea631b903bc5156683b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum number of samples needed in the I2S RX hardware FIFO before an interrupt is generated. It is only defined if <a class="el" href="ut_i2_s__2387_8c.html#ab66fe69b324ccf6f854a64423b124b39">MULTIBYTE_IRQ</a> is defined, because otherwise an interrupt is generated whenever a sample is placed in the FIFO. <br /></td></tr>
 <tr class="separator:ac374cd2759ffcea631b903bc5156683b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac69ee46f4a51ed14f0d68628c2dec71d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_i2_s__2387_8c.html#ac69ee46f4a51ed14f0d68628c2dec71d">MAX_CHANNELS</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ac69ee46f4a51ed14f0d68628c2dec71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,16 +122,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6305f7e777ccfcd5dda660fd987af2ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_i2_s__2387_8c.html#a6305f7e777ccfcd5dda660fd987af2ad">utI2S2387_EndRecording</a> (void)</td></tr>
 <tr class="separator:a6305f7e777ccfcd5dda660fd987af2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1af9ad9c5ed5752ace6138f10255419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_i2_s__2387_8c.html#af1af9ad9c5ed5752ace6138f10255419">utI2S2387_AddDeviceAddress</a> (const char *btAddress, bool isFirstDevice)</td></tr>
-<tr class="memdesc:af1af9ad9c5ed5752ace6138f10255419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a Bluetooth device ID to the current metadata tags. Currently a maximum of two device IDs is supported.  <br /></td></tr>
 <tr class="separator:af1af9ad9c5ed5752ace6138f10255419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef499415ae319bc2464c7f2c4484b2cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_i2_s__2387_8c.html#aef499415ae319bc2464c7f2c4484b2cf">utI2S2387_BeginRecording</a> (const char *filename, UT_DateTime timestamp, bool isGPSTime, const char *serial, const char *btAddress, int recordingSession, int useChannels)</td></tr>
-<tr class="memdesc:aef499415ae319bc2464c7f2c4484b2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start recording audio to a file, with a set of metadata to append when recording is stopped.  <br /></td></tr>
 <tr class="separator:aef499415ae319bc2464c7f2c4484b2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb1d5cf8d4b4a04d614fdf2c9a8dab19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_i2_s__2387_8c.html#adb1d5cf8d4b4a04d614fdf2c9a8dab19">utI2S2387_UpdateToGPSTime</a> (UT_DateTime timestamp)</td></tr>
-<tr class="memdesc:adb1d5cf8d4b4a04d614fdf2c9a8dab19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the starting timestamp in the audio metadata according to the current time, provided the starting timestamp was not valid GPS time. It is assumed that the current <em>timestamp</em> is valid GPS time, because otherwise calling this function is not helpful. It operates by calculating the time since the audio recording started using the audio sample rate and quantity of recorded data. It does not allow for leap-seconds in the period between the starting time and the current time.  <br /></td></tr>
 <tr class="separator:adb1d5cf8d4b4a04d614fdf2c9a8dab19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fdcea5067c288746fe08252c463dd1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_i2_s__2387_8c.html#a0fdcea5067c288746fe08252c463dd1b">utI2S2387_Update</a> (void)</td></tr>
-<tr class="memdesc:a0fdcea5067c288746fe08252c463dd1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The step function for this module. This is where audio is written to file.  <br /></td></tr>
 <tr class="separator:a0fdcea5067c288746fe08252c463dd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00a76e6292aab4bb934ce3a492fe55f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut_i2_s__2387_8c.html#ae00a76e6292aab4bb934ce3a492fe55f">utI2S2387_EnableLoopback</a> (bool useLoopback, bool crossLink)</td></tr>
 <tr class="separator:ae00a76e6292aab4bb934ce3a492fe55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,10 +138,6 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Oscar Key </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>15/01/2012 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>2012, Igtimi Ltd., all rights reserved.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd><p class="startdd">Function de-duplication. </p>
-<p class="interdd">Reduce coupling. </p>
-<p class="enddd">Generalise/abstract some overly specific functions. </p>
-</dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3db2d1aa6a0f0199c0b6e9dc7b04e9b2" name="a3db2d1aa6a0f0199c0b6e9dc7b04e9b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3db2d1aa6a0f0199c0b6e9dc7b04e9b2">&#9670;&#160;</a></span>DAY_MS</h2>
@@ -382,7 +370,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Enforce argument limits. </dd></dl>
 
 </div>
 </div>
@@ -567,7 +554,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 26 2024 13:41:58 for uTrack by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Tue Jan 14 2025 16:04:28 for Igtimi Yachtbot Firmware by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

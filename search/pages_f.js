@@ -13,8 +13,9 @@ var searchData=
   ['uhf_20power_20_3cn_3e_10',['UHF POWER &lt;n&gt;',['../uhf_power.html',1,'']]],
   ['uhf_20status_11',['UHF STATUS',['../uhf_status.html',1,'']]],
   ['unit_5fid_20_5bn_5d_12',['UNIT_ID [n]',['../main_unitid.html',1,'']]],
-  ['usb_20cdc_20_5bon_2foff_5d_13',['USB CDC [ON/OFF]',['../usb_cdc.html',1,'']]],
-  ['usb_20hp_20_5bon_20_5benum_5d_2foff_5d_14',['USB HP [ON [ENUM]/OFF]',['../usb_hp.html',1,'']]],
-  ['usb_20msc_20_5bon_2foff_5d_15',['USB MSC [ON/OFF]',['../usb_msc.html',1,'']]],
-  ['utrack_20documentation_16',['uTrack Documentation',['../index.html',1,'']]]
+  ['uptime_13',['UPTIME',['../main_uptime.html',1,'']]],
+  ['usb_20cdc_20_5bon_2foff_5d_14',['USB CDC [ON/OFF]',['../usb_cdc.html',1,'']]],
+  ['usb_20hp_20_5bon_20_5benum_5d_2foff_5d_15',['USB HP [ON [ENUM]/OFF]',['../usb_hp.html',1,'']]],
+  ['usb_20msc_20_5bon_2foff_5d_16',['USB MSC [ON/OFF]',['../usb_msc.html',1,'']]],
+  ['user_5ftoken_20_5c_3ctoken_5c_3e_17',['USER_TOKEN \&lt;TOKEN\&gt;',['../riot_user_token.html',1,'']]]
 ];

@@ -9,6 +9,5 @@ var searchData=
   ['time_20tps_6',['TIME TPS',['../time_tps.html',1,'']]],
   ['time_20usepps_20_5btrue_2fflase_5d_7',['TIME USEPPS [TRUE/FLASE]',['../time_usepps.html',1,'']]],
   ['time_5fbetween_5fprints_8',['TIME_BETWEEN_PRINTS',['../ut_u_s_b_8c.html#adeed8f500b8d9ad55c25123ae639e9ce',1,'utUSB.c']]],
-  ['todo_20list_9',['Todo List',['../todo.html',1,'']]],
-  ['tomode_10',['toMode',['../struct_b_t___mode_handler.html#a13779763a769ea2249fe51d662837c83',1,'BT_ModeHandler']]]
+  ['tomode_9',['toMode',['../struct_b_t___mode_handler.html#a13779763a769ea2249fe51d662837c83',1,'BT_ModeHandler']]]
 ];
